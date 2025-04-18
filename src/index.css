@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Tajawal', sans-serif;
+  }
+  
+  body {
+    @apply bg-secondary-50 text-secondary-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-md transition duration-200 ease-in-out cursor-pointer;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-200 hover:bg-secondary-300 text-secondary-800 font-semibold py-2 px-4 rounded-md transition duration-200 ease-in-out cursor-pointer;
+  }
+  
+  .btn-accent {
+    @apply bg-accent-600 hover:bg-accent-700 text-white font-semibold py-2 px-4 rounded-md transition duration-200 ease-in-out cursor-pointer;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-4 border border-secondary-200;
+  }
+  
+  .input {
+    @apply border border-secondary-300 rounded-md p-2 w-full box-border focus:outline-none focus:ring-2 focus:ring-primary-500;
+  }
+  
+  .textarea {
+    @apply border border-secondary-300 rounded-md p-2 w-full box-border focus:outline-none focus:ring-2 focus:ring-primary-500;
+  }
+  
+  .checkbox {
+    @apply w-4 h-4 text-primary-600 bg-secondary-100 border-secondary-300 rounded focus:ring-primary-500;
+  }
+}
